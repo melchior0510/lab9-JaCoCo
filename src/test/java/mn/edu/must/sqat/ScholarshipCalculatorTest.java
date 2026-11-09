@@ -137,4 +137,22 @@ class ScholarshipCalculatorTest {
         assertEquals(2.5, calc.gpa(new double[]{95, 85, 75, 65}), 0.0001);
     }
 
+    // ===================== D: Зааг утгын тестүүд (commit 4: алдаа илрүүлнэ) =====================
+
+    @ParameterizedTest(name = "letterGrade({0}) = {1}")
+    @CsvSource({
+            "0,     F",
+            "59.99, F",
+            "60,    D",
+            "69.99, D",
+            "70,    C",
+            "79.99, C",
+            "80,    B",
+            "89.99, B",
+            "90,    A",
+            "100,   A"
+    })
+    void letterGrade_boundaries(double score, String expected) {
+        assertEquals(expected, calc.letterGrade(score));
+    }
 }
