@@ -115,4 +115,26 @@ class ScholarshipCalculatorTest {
         assertEquals(0, calc.scholarship(2.5, 16, false));
     }
 
+    // ===================== C: Давталтын заагийн тест 0/1/2+ (commit 3) =====================
+
+    @Test
+    void gpa_emptyArray_throws() {
+        assertThrows(IllegalArgumentException.class, () -> calc.gpa(new double[]{}));
+    }
+
+    @Test
+    void gpa_null_throws() {
+        assertThrows(IllegalArgumentException.class, () -> calc.gpa(null));
+    }
+
+    @Test
+    void gpa_oneScore_is4() {
+        assertEquals(4.0, calc.gpa(new double[]{95}), 0.0001);
+    }
+
+    @Test
+    void gpa_manyScores_is2point5() {
+        assertEquals(2.5, calc.gpa(new double[]{95, 85, 75, 65}), 0.0001);
+    }
+
 }
