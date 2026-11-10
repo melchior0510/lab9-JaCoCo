@@ -4,6 +4,23 @@
 [[1;34mINFO[m] [1mBuilding lab09-jacoco 1.0[m
 [[1;34mINFO[m]   from pom.xml
 [[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.pom
+Progress (1): 4.1 kBProgress (1): 5.3 kB                    Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.pom[90m (5.3 kB at 8.2 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/plugins/maven-plugins/35/maven-plugins-35.pom
+Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 9.9 kB                    Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/plugins/maven-plugins/35/maven-plugins-35.pom[90m (9.9 kB at 78 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/maven-parent/35/maven-parent-35.pom
+Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 33 kBProgress (1): 37 kBProgress (1): 41 kBProgress (1): 45 kBProgress (1): 45 kB                   Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/maven-parent/35/maven-parent-35.pom[90m (45 kB at 294 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/apache/25/apache-25.pom
+Progress (1): 4.1 kBProgress (1): 8.2 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 20 kBProgress (1): 21 kB                   Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/apache/25/apache-25.pom[90m (21 kB at 143 kB/s)[0m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mclean:3.2.0:clean[m [1m(default-clean)[m @ [36mlab09-jacoco[0;1m ---[m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.pom
+Progress (1): 4.1 kBProgress (1): 5.8 kB                    Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.pom[90m (5.8 kB at 34 kB/s)[0m
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.jar
+[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0mcommons-io/commons-io/2.6/commons-io-2.6.jar
+Progress (1): 3.3/153 kBProgress (1): 6.0/153 kBProgress (1): 8.2/153 kBProgress (1): 11/153 kB Progress (1): 14/153 kBProgress (1): 16/153 kBProgress (1): 21/153 kBProgress (1): 25/153 kBProgress (1): 29/153 kBProgress (1): 33/153 kBProgress (1): 37/153 kBProgress (1): 41/153 kBProgress (1): 43/153 kBProgress (1): 47/153 kBProgress (1): 51/153 kBProgress (1): 55/153 kBProgress (1): 60/153 kBProgress (1): 64/153 kBProgress (1): 68/153 kBProgress (1): 72/153 kBProgress (1): 76/153 kBProgress (1): 80/153 kBProgress (1): 84/153 kBProgress (2): 84/153 kB | 3.3/215 kBProgress (2): 88/153 kB | 3.3/215 kBProgress (2): 92/153 kB | 3.3/215 kBProgress (2): 92/153 kB | 6.0/215 kBProgress (2): 96/153 kB | 6.0/215 kBProgress (2): 100/153 kB | 6.0/215 kBProgress (2): 105/153 kB | 6.0/215 kBProgress (2): 109/153 kB | 6.0/215 kBProgress (2): 111/153 kB | 6.0/215 kBProgress (2): 115/153 kB | 6.0/215 kBProgress (2): 119/153 kB | 6.0/215 kBProgress (2): 119/153 kB | 8.2/215 kBProgress (2): 123/153 kB | 8.2/215 kBProgress (2): 127/153 kB | 8.2/215 kBProgress (2): 127/153 kB | 11/215 kB Progress (2): 127/153 kB | 14/215 kBProgress (2): 131/153 kB | 14/215 kBProgress (2): 135/153 kB | 14/215 kBProgress (2): 139/153 kB | 14/215 kBProgress (2): 139/153 kB | 16/215 kBProgress (2): 143/153 kB | 16/215 kBProgress (2): 147/153 kB | 16/215 kBProgress (2): 152/153 kB | 16/215 kBProgress (2): 153 kB | 16/215 kB    Progress (2): 153 kB | 19/215 kBProgress (2): 153 kB | 22/215 kBProgress (2): 153 kB | 25/215 kBProgress (2): 153 kB | 27/215 kBProgress (2): 153 kB | 30/215 kBProgress (2): 153 kB | 33/215 kBProgress (2): 153 kB | 36/215 kBProgress (2): 153 kB | 38/215 kBProgress (2): 153 kB | 41/215 kBProgress (2): 153 kB | 44/215 kBProgress (2): 153 kB | 47/215 kBProgress (2): 153 kB | 49/215 kBProgress (2): 153 kB | 52/215 kBProgress (2): 153 kB | 55/215 kBProgress (2): 153 kB | 59/215 kBProgress (2): 153 kB | 63/215 kBProgress (2): 153 kB | 66/215 kBProgress (2): 153 kB | 70/215 kBProgress (2): 153 kB | 74/215 kBProgress (2): 153 kB | 78/215 kBProgress (2): 153 kB | 82/215 kBProgress (2): 153 kB | 86/215 kBProgress (2): 153 kB | 90/215 kBProgress (2): 153 kB | 94/215 kBProgress (2): 153 kB | 98/215 kBProgress (2): 153 kB | 102/215 kBProgress (2): 153 kB | 106/215 kBProgress (2): 153 kB | 111/215 kBProgress (2): 153 kB | 115/215 kBProgress (2): 153 kB | 119/215 kBProgress (2): 153 kB | 123/215 kBProgress (2): 153 kB | 127/215 kBProgress (2): 153 kB | 131/215 kBProgress (2): 153 kB | 135/215 kBProgress (2): 153 kB | 139/215 kBProgress (2): 153 kB | 143/215 kBProgress (2): 153 kB | 147/215 kBProgress (2): 153 kB | 152/215 kBProgress (2): 153 kB | 156/215 kBProgress (2): 153 kB | 160/215 kBProgress (2): 153 kB | 164/215 kBProgress (2): 153 kB | 168/215 kBProgress (2): 153 kB | 172/215 kBProgress (2): 153 kB | 176/215 kBProgress (2): 153 kB | 180/215 kBProgress (2): 153 kB | 184/215 kBProgress (2): 153 kB | 188/215 kBProgress (2): 153 kB | 193/215 kBProgress (2): 153 kB | 197/215 kBProgress (2): 153 kB | 199/215 kBProgress (2): 153 kB | 203/215 kBProgress (2): 153 kB | 207/215 kBProgress (2): 153 kB | 211/215 kBProgress (2): 153 kB | 215 kB                                 Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.jar[90m (153 kB at 657 kB/s)[0m
+Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0mcommons-io/commons-io/2.6/commons-io-2.6.jar[90m (215 kB at 811 kB/s)[0m
+[[1;34mINFO[m] Deleting /home/kael/Downloads/lab09-jacoco/target
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.12:prepare-agent[m [1m(default)[m @ [36mlab09-jacoco[0;1m ---[m
 [[1;34mINFO[m] argLine set to -javaagent:/home/kael/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar=destfile=/home/kael/Downloads/lab09-jacoco/target/jacoco.exec
@@ -12,13 +29,14 @@
 [[1;34mINFO[m] skip non existing resourceDirectory /home/kael/Downloads/lab09-jacoco/src/main/resources
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mcompiler:3.13.0:compile[m [1m(default-compile)[m @ [36mlab09-jacoco[0;1m ---[m
-[[1;34mINFO[m] Nothing to compile - all classes are up to date.
+[[1;34mINFO[m] Recompiling the module because of [1mchanged source code[m.
+[[1;34mINFO[m] Compiling 1 source file with javac [debug release 17] to target/classes
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:testResources[m [1m(default-testResources)[m @ [36mlab09-jacoco[0;1m ---[m
 [[1;34mINFO[m] skip non existing resourceDirectory /home/kael/Downloads/lab09-jacoco/src/test/resources
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mcompiler:3.13.0:testCompile[m [1m(default-testCompile)[m @ [36mlab09-jacoco[0;1m ---[m
-[[1;34mINFO[m] Recompiling the module because of [1mchanged source code[m.
+[[1;34mINFO[m] Recompiling the module because of [1mchanged dependency[m.
 [[1;34mINFO[m] Compiling 1 source file with javac [debug release 17] to target/test-classes
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32msurefire:3.2.5:test[m [1m(default-test)[m @ [36mlab09-jacoco[0;1m ---[m
@@ -28,7 +46,7 @@
 [[1;34mINFO[m]  T E S T S
 [[1;34mINFO[m] -------------------------------------------------------
 [[1;34mINFO[m] Running mn.edu.must.sqat.[1mScholarshipCalculatorTest[m
-[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 s -- in mn.edu.must.sqat.[1mScholarshipCalculatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.165 s -- in mn.edu.must.sqat.[1mScholarshipCalculatorTest[m
 [[1;34mINFO[m] 
 [[1;34mINFO[m] Results:
 [[1;34mINFO[m] 
@@ -36,6 +54,7 @@
 [[1;34mINFO[m] 
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mjar:3.1.2:jar[m [1m(default-jar)[m @ [36mlab09-jacoco[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/kael/Downloads/lab09-jacoco/target/lab09-jacoco-1.0.jar
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.12:report[m [1m(report)[m @ [36mlab09-jacoco[0;1m ---[m
 [[1;34mINFO[m] Loading execution data file /home/kael/Downloads/lab09-jacoco/target/jacoco.exec
@@ -43,6 +62,6 @@
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time:  5.973 s
-[[1;34mINFO[m] Finished at: 2026-11-09T17:04:14Z
+[[1;34mINFO[m] Total time:  8.737 s
+[[1;34mINFO[m] Finished at: 2026-11-10T03:23:13Z
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
