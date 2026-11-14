@@ -2,7 +2,22 @@
 
 - Нэр: Мөнх-Оргил
 - Оюутны код: B242270130
-- Java 17 (OpenJDK 17.0.20.1), Maven 3.9.12
+
+]633;E;echo '## Орчин';df68ac66-6e82-4d3b-bfd9-f442af3c10fe]633;C## Орчин
+
+```
+$ java -version
+openjdk version "17.0.20.1" 2026-08-18
+OpenJDK Runtime Environment (build 17.0.20.1+1-1-26.04-Ubuntu)
+OpenJDK 64-Bit Server VM (build 17.0.20.1+1-1-26.04-Ubuntu, mixed mode, sharing)
+
+$ mvn -version
+[1mApache Maven 3.9.12[m
+Maven home: /usr/share/maven
+Java version: 17.0.20.1, vendor: Ubuntu, runtime: /usr/lib/jvm/java-17-openjdk-amd64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "7.0.0-38-generic", arch: "amd64", family: "unix"
+```
 
 ## Хэсэг A: Happy path (5 тест)
 
@@ -15,13 +30,21 @@ Happy path тестүүд зөвхөн хэвийн замыг дайрсан. �
 
 ## Хэсэг B: CFG ба Branch 100%
 
-`scholarship()`-ийн CFG: cfg.png
+`scholarship()`-ийн CFG: cfg.png (ирмэг бүр дээр тухайн замыг дайрдаг тестийн нэр бичсэн).
 
-Нийт 21 тест шаардагдсан. results/jacoco-B.csv: Branch 41 / 41 = 100%, Line 25 / 25 = 100%.
+Branch 100% хүртэл нийт 23 тест шаардагдсан (A-ийн 5 + B-ийн 18). results/jacoco-B.csv: Branch 41 / 41 = 100%, Line 25 / 25 = 100% (BRANCH_MISSED = 0, LINE_MISSED = 0).
 
-## Хэсэг C: Давталтын тест
+Тэмдэглэл: B-ийг эхлээд `mvn clean`-гүй хэмжиж, JaCoCo-ийн хуучин өгөгдөл (`jacoco.exec`) хуримтлагдсанаас 100% гэж буруу гарсан. `mvn clean verify`-ээр дахин хэмжихэд `gpa(null)`, `gpa([])` тест дутуу байсан тул 95.1% (39/41) гарсан. Эдгээр хоёр тестийг B-д нэмж 100% хүрсэн.
 
-`gpa()` дээр давталтыг 0 / 1 / 2+ удаа ажиллуулдаг тест нэмсэн (хоосон массив, null, нэг оноо, олон оноо).
+## Хэсэг C: Давталтын тест (0 / 1 / 2+)
+
+`gpa()` доторх давталтыг 0, 1, олон удаа ажиллуулдаг тест нэмсэн:
+
+- 0 удаа: `gpa([])` нь exception шиднэ (B-д аль хэдийн байгаа)
+- 1 удаа: `gpa([95]) == 4.0`
+- 2+ удаа: `gpa([95, 85, 75, 65]) == 2.5`
+
+Эдгээр тест хамралтыг өсгөөгүй (results/jacoco-C.csv нь B-тэй ижил: Branch 41/41, Line 25/25), учир нь давталтын бүх мөр, салааг B-ийн тестүүд аль хэдийн дайрсан. Гэвч тэдгээр нь шаардлагатай хэвээр байна. Хамралт нь мөр ажилласан эсэхийг л хэмждэг, гаралтын утга зөв эсэхийг хэмждэггүй. Жишээ нь `total += 4`-ийг `total = 4` гэж андуурсан эсвэл `total / scores.length`-ийг `total / (scores.length - 1)` гэж бичсэн алдаа нь давталтыг олон удаа ажиллуулж, дундажийн утгыг шалгадаг тестээр л илэрнэ. Харин хамралт нь тэр үед ч 100% хэвээр байна.
 
 ## Хэсэг D: Зааг утгын тест, алдаа
 
