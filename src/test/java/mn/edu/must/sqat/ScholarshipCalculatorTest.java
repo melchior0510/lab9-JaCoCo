@@ -115,7 +115,7 @@ class ScholarshipCalculatorTest {
         assertEquals(0, calc.scholarship(2.5, 16, false));
     }
 
-    // ===================== C: Давталтын заагийн тест 0/1/2+ (commit 3) =====================
+    // gpa(): guard-ийн хоёр салаа (scores == null, length == 0), B-д хамаарна
 
     @Test
     void gpa_emptyArray_throws() {
@@ -126,6 +126,8 @@ class ScholarshipCalculatorTest {
     void gpa_null_throws() {
         assertThrows(IllegalArgumentException.class, () -> calc.gpa(null));
     }
+
+    // ===================== C: Давталтын заагийн тест 0/1/2+ (commit 3) =====================
 
     @Test
     void gpa_oneScore_is4() {
